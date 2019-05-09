@@ -1,0 +1,299 @@
+/* CSS files add styling rules to your content */
+
+body { 
+	font-family:Open Sans, Geneva, sans-serif; 
+	font-size:12px;
+	color:#666666; 
+	font-weight:normal; 
+	background: #e2e2e2 url(../images/diamond_upholstery.png) repeat top left;
+	background-color:#FFFFFF;
+}
+.blackbody { 
+	color:#bbb; 
+	font-weight:normal; 
+	background: #000;
+}
+.clear-body {
+	background:none;
+}
+p {
+	padding:8px 0 8px 0;
+}
+a {
+	color:#7b6cb2;
+    text-decoration: none;
+	border:0;
+}
+a:hover {
+	color:#55458d;
+}
+h1 {
+	font-size:20px;
+	font-weight:600;
+}
+h2 {
+	font-size:18px;
+	font-weight:600;
+}
+h3 {
+	font-size:16px;
+	font-weight:600;
+}
+h4 {
+	font-size:14px;
+	font-weight:600;
+}
+h5 {
+	font-size:12px;
+	font-weight:600;
+}
+h6 {
+	font-size:10px;
+	font-weight:600;
+}
+#background {
+	position:fixed;
+	z-index:-1;
+	top:0;
+	left:0;
+	overflow:hidden;
+	/*display:none;*/
+}
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Text Relvant */
+.Subtitle{
+    font-size: 28px;
+    color: rgb(215,215,215);
+    margin: 50px 15px 15px 0px;
+}
+.mainText{
+    font-size: 16px;
+    color: rgb(215,215,215);
+    text-align: left;
+}
+
+/* head relvant */
+.header-white {
+	position:fixed;
+	z-index: 99;
+	height:77px;
+	width: 100%;
+	background: url(../images/header-bg.png) repeat-x;
+	-webkit-backface-visibility: hidden;
+}
+.blackbody .header-white {
+	background: url(../images/header-bg-black.png) repeat-x;
+}
+.logo {
+	float:left;
+	height:100px;
+	width:260px;
+	position:relative;
+	z-index:10;
+	margin-left:12px;
+	margin-top:-28px;
+	background:url(../images/logo.png) no-repeat left bottom;
+}
+/* head end */
+
+/*head vegas background*/
+.vegas_back{
+    width: 100%;
+    height: 500px;
+}
+
+/* navgation relvant */
+.ss-nav {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	padding-top:18px;
+	width: 100%;
+	z-index: 100;
+}
+.nav {
+	float:right; 
+	padding-right:20px; 
+	font-size: 13px;
+	text-transform: uppercase;
+	display: inline-block;
+	margin: 0;
+	list-style-type: none;
+	vertical-align: top;
+	font-weight:600;
+}
+.nav li {
+	float:left;
+	display: block;
+	width: auto;
+	height: 22px;
+	padding: 12px 10px 20px 10px;
+	text-align: center;
+	cursor: pointer;
+}		
+.nav li:hover, .selected-nav {
+/*	border-bottom: 4px solid #f0e0d4;*/
+    border-bottom: 4px solid #ffffff;
+}
+.nav li a {
+	height:30px;
+	display:block;
+	position: relative;
+	z-index: 1px;
+	color:#666;
+	text-decoration: none;
+}
+.nav li:hover a, .selected-nav a {
+	color: #ffffff !important;
+}
+/* navgation relvant end */
+
+@media(min-width: 992px){
+ .navbar-toggleable-md {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    } 
+}
+
+/* timeline Part */
+.timeline {
+    text-align: center;
+    background-color: #666;
+    height: 32px;
+    width: 8.333333%;
+    display: inline-block;
+    color: white;
+    margin: auto;
+}
+
+.timeline :hover {
+    background-color: azure;
+    color: black;
+    transition: 1s;
+}
+
+.Tslected {
+    background-color: bisque ;
+    color: black;
+    text-align: center;
+    height: 32px;
+    width: 8.333333%;
+    display: inline-block;
+    margin: auto;
+    transition: 1s;
+}
+
+/* linechart Part */
+.ImageContainer {
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;    
+}
+
+#LineChartContainer {
+    background-image: url(../images/Chart/LineChart.png);
+}
+
+#DotChartContainer {
+    background-image: url(../images/Chart/Copies_Chart.png);
+}
+
+#LineColorkey {
+    background-image: url(../images/Chart/Color_Size_Key.png);
+    background-position: right;
+}
+
+#Game_Recorded {
+    background-image: url(../images/Chart/Released_Game_Number.jpg);
+    background-position: top;
+}
+#Weekly_Avg {
+    background-image: url(../images/Chart/Weekly_Sales.jpg);
+    background-position: top;
+}
+#Released_Games {
+    background-image: url(../images/Chart/Publisher/Game_Released_Compare.jpg);
+    background-position: top;
+}
+#Released_Games_Sales{
+    background-image: url(../images/Chart/Publisher/Sales_Compare.jpg);
+    background-position: top;
+}
+#Publish_Game {
+    background-image: url(../images/Stories/Publisher_Games.png);
+}
+#Platform_Game {
+    background-image: url(../images/Stories/Platform_Games.png);
+}
+#Platform_Sales {
+    background-image: url(../images/Stories/Platform_Sales.png)
+}
+#Publish_Sales {
+    background-image: url(../images/Stories/Publisher_Sales.png);
+}
+
+.ColorKey {
+    text-align: center;
+}
+
+/* Popup Window */
+/* The Modal (background) */
+.modal {
+  display: none;   /* Hidden by default */ 
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  transition: 1.0s;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Footer */
+#footer {
+    margin-top: 30px;
+    margin-bottom: 45px;
+    width: 100%;
+    height: 50px;
+}
