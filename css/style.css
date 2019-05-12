@@ -1,7 +1,7 @@
 /* CSS files add styling rules to your content */
 
 body { 
-	font-family:Open Sans, Geneva, sans-serif; 
+	font-family:Helvetica; 
 	font-size:12px;
 	color:#666666; 
 	font-weight:normal; 
@@ -72,8 +72,12 @@ h6 {
 }
 .mainText{
     font-size: 16px;
-    color: rgb(215,215,215);
+    color: rgb(175,175,175);
     text-align: left;
+}
+
+b {
+    color: rgb(255,255,255);
 }
 
 /* head relvant */
@@ -213,17 +217,46 @@ h6 {
     background-image: url(../images/Chart/Copies_Chart.png);
 }
 
+#Sample1st {
+    background-image: url(../images/Explaination/Kaggle.png);
+    background-position: top;
+}
+
+#Sample2nd {
+    background-image: url(../images/Explaination/vgchartz.png);
+    background-position: top;
+}
+
+#Sample3rd {
+    background-image: url(../images/Explaination/python_Code.png);
+    background-position: top;
+}
+
+#Sample4th {
+    background-image: url(../images/Explaination/OECD_DATA.png);
+    background-position: top;
+}
+
+#Sample5th {
+    background-image: url(../images/Explaination/Weekly_Summary.png);
+    background-position: top;
+}
+
 #LineColorkey {
     background-image: url(../images/Chart/Color_Size_Key.png);
     background-position: right;
 }
 
 #Game_Recorded {
-    background-image: url(../images/Chart/Released_Game_Number.jpg);
+    background-image: url(../images/Chart/Released_Game_Number_New.jpg);
     background-position: top;
 }
 #Weekly_Avg {
     background-image: url(../images/Chart/Weekly_Sales.jpg);
+    background-position: top;
+}
+#Released_Games_And_Sale{
+    background-image: url(../images/Chart/Publisher/Released_Game_Number_New.jpg);
     background-position: top;
 }
 #Released_Games {
@@ -245,6 +278,34 @@ h6 {
 }
 #Publish_Sales {
     background-image: url(../images/Stories/Publisher_Sales.png);
+}
+#Tools_1 {
+    background-image: url(../images/Tools/1200px-Node.js_logo.svg.png);
+    background-position: center;
+}
+#Tools_2 {
+    background-image: url(../images/Tools/1024px-Python-logo-notext.svg.png);
+    background-position: center;
+}
+#Tools_3 {
+    background-image: url(../images/Tools/1300px_Tableau_Software_logo.png);
+    background-position: center;
+}
+#Tools_4 {
+    background-image: url(../images/Tools/1562726.png);
+    background-position: center;
+}
+#Tools_5 {
+    background-image: url(../images/Tools/bootstrap-social.png);
+    background-position: center;
+}
+#Tools_6 {
+    background-image: url(../images/Tools/Screen%20Shot%202019-05-11%20at%204.20.18%20PM.png);
+    background-position: center;
+}
+#Map_Color_Key {
+    background-image: url(../images/Map_Color_Key.jpg);
+    background-position: center;
 }
 
 .ColorKey {

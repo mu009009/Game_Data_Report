@@ -71,7 +71,7 @@
                       </div>
                       <div class="mainText">
                           <br>
-                          Generally, hope to show the game sales changing according to time. Different platforms will reveal people's consumption habits like PS series is mainly for home play, while you can play a DS series game anywhere you want.
+                          Generally, we can see that the platform design and produced by Japan has taken a huge part of the game platform market. PS series, DS series, Wii series they are all Japanese products, except them, we can only find the game machine designed by Microsoft, XBOX series on this chart.
                           <br>
                       </div>
                   </div>
@@ -80,10 +80,92 @@
           </div>
       </div>
       
+      <div id='AboutThe' class="container">
+          <div class="Subtitle" style="text-align: center">About this Project</div>
+          
+          <div class="mainText" style="width: 100%; height: auto">
+              This project is mainly about Games. As a game player, and who want to join the game products as my career in the future. I hope to understand and learn more about the game market. Thus, I try to connect the game GDP data with game sales to reveal the stories and conclusions behind the data.
+          </div>
+      </div>
+      
+      <div id='DataRe' class="container">
+          <div class="Subtitle" style="text-align: center">Data Resources</div>
+          
+          <div class="mainText" style="width: 100%; height: auto">
+              Generally, all the data is coming from the internet and several game research websites as shown below:<br>
+              <br>
+              
+          </div>
+          <div style="width: 100%; height: auto; display: inline-block;">
+              <div id="Sample1st" class="ImageContainer col-6" style="width: 100%; height: 400px; float: left;">
+              </div>
+              <div style="width: 100%; height: auto; float: left;" class="col-6">
+                  <div class="mainText">
+                      <b><a href="https://www.kaggle.com/gregorut/videogamesales">kaggle.com</a><br></b>
+                      <br>
+                      This is a website which supports the way to download the sales data for each game. This is a general dataset, which includes all the accumulate game sales after its released.<br>
+                      <br>
+                      All its original data is from another website named <b>vgchartz</b>.
+                      Due to this website need the payment to get its whole newest game data, therefore, the data is only until the year 2017.
+                  </div>
+              </div>         
+          </div>
+          <div style="width: 100%; height: auto; display: inline-block;">
+              <div id="Sample2nd" class="ImageContainer col-6" style="width: 100%; height: 400px; float: right;">
+              </div>
+              <div style="width: 100%; height: auto; float: right;" class="col-6">
+                  <div class="mainText">
+                      <b><a href="http://www.vgchartz.com/yearly/2018/Global/">vgchartz.com</a><br></b>
+                      <br>
+                      Also, I got data from the original source website. After checking this website I found out that its also offer the sales data year by year. This gives me the opportunity to analyze the game sales situation based on years.<br>
+                      <br>
+                      Unfortunately, you also need to purchase their expensive membership to get the whole yearly dataset, only the <b>top 100 sales game data</b> for each year is free to public. Thus, I made the python code to get the data from this page and export them into different CSV files based on year time and area.
+                  </div>
+              </div>         
+          </div>
+          <div style="width: 100%; height: auto; display: inline-block;">
+              <div id="Sample3rd" class="ImageContainer col-6" style="width: 100%; height: 400px; float: left;">
+              </div>
+              <div style="width: 100%; height: auto; float: left;" class="col-6">
+                  <div class="mainText">
+                      Part of the python code.
+                  </div>
+              </div>         
+          </div>
+          <div style="width: 100%; height: auto; display: inline-block;">
+              <div id="Sample4th" class="ImageContainer col-6" style="width: 100%; height: 400px; float: right;">
+              </div>
+              <div style="width: 100%; height: auto; float: right;" class="col-6">
+                  <div class="mainText">
+                      And the GDP data is download from the <b><a href="https://data.oecd.org/gdp/gross-domestic-product-gdp.htm">OECD Data</a></b> website
+                  </div>
+              </div>         
+          </div>
+          <div style="width: 100%; height: auto; display: inline-block;">
+              <div id="Sample5th" class="ImageContainer col-6" style="width: 100%; height: 300px; float: left;">
+              </div>
+              <div style="width: 100%; height: auto; float: left;" class="col-6">
+                  <div class="mainText">
+                      After gathering the data, I start to clean and Integrate the datasets.<br>
+                      <br>
+                      Left is the CSV file I created based on the game sales data, I categorized those games based on the time they stay on the <b>top 100 game</b> sales list and create the CSV file record the statistical results.
+                  </div>
+              </div>         
+          </div>
+          <div style="width: 100%; height: auto; display: inline-block;">
+              <div class="mainText" style="text-align: center">
+                  And based on all of those datasets I got, I created the data visualization and start my analysis as below.
+              </div>
+          </div>
+      </div>      
+      
       <div id="MainArea">
           <div class="Subtitle" style="text-align: center">GDP & Game Sales Map</div>
           
           <div id="MArea" style="position: relative; width: 100%; height: 600px; margin-top: 30px">
+          </div>
+          
+          <div id='Map_Color_Key' class="ImageContainer container" style="width: 100%; height: 80px; text-align: center;">
           </div>
 
           <div id='TimelineContainer' class="container" style="text-align: center;">
@@ -140,22 +222,15 @@
               <div id='LineColorkey' class="ImageContainer" style="position: relative; width: 100%; height: 220px; margin-top: 30px;">
                   <div class="mainText" style="padding-right: 300px; width: 100%; height: auto">
                       The map and the line chart show the gdp change and game sales data from 2007 to 2017. In these 11 years, only in 2009, there is a negative gdp growth.<br>
-
                       <br>
-
-                      However, the game sales seems not influenced by growth or crisis of the finance. What's worse, after 2010 finance goes better year by year, but the game marketing seems smaller and smaller.<br>
-
-                      <br>
-
-                      Generally, I assume that this is because of the smartphone games marketing influence people's choice.
+                      
+                      However, <b>the game sales seems not influenced</b> by growth or crisis of the finance. What's worse, after 2010 finance goes better year by year, but the game marketing seems smaller and smaller.<br>
+                      I assume that this is because of the smartphone games marketing influence people's choice.
                   </div>
               </div>
               
               <div class="mainText" style="text-align: left; width: 100%; height: auto">
-                  Generally, shows the data that how the financial situation changes from 2007 to 2017, we can see that the finance goes up year by year, except 2009, but the game marketing going smaller and smaller.
-                  <br>
-                  <br>
-                  This may be influenced by the game marketing of smartphone, and also maybe by the movie career and other entertainment careers. People have more and more choice on spending their spare time, but whatever how the game marketing worse is, there is still a lot of companies hold their positions in this field. The next part will show the transcripts from game companies, they will categories based on their base areas. 
+                  Generally, people have more and more choice on spending their spare time, and this may cause that <b>even finance goes better year by year, people spent less on games.</b> But whatever how the game marketing worse is, there is still a lot of companies hold their positions in this field. The next part will show the transcripts from game companies, they will categories based on their base areas. 
               </div>              
           </div>
           
@@ -165,36 +240,19 @@
               </div>
               <div style="width: 100%; height: auto;">
                   <div class="col-12" style="display: inline-block; float: left; position: relative; height: auto">
-                      <div class="mainText" style="text-align: center; width: 100%; margin-top: 20px;">
-                          Number of Game Released, Category based on the time stay in the yearly 100 top Game sales list.
-                      </div>
-                      <div id="Game_Recorded" class="ImageContainer" style="position: relative; width: 100%; height: 1080px; margin-top: 30px;">
-                      </div>
-                  </div>
-                  <div class="col-12" style="display: inline-block; float: left; position: relative; height: auto">
-                      <div class="mainText" style="text-align: center; width: 100%; margin-top: 20px;">
-                          Average Weekly Sales Per Game, also Category based on the time stay in the yearly 100 top Game sales list, unit based on Copies.
-                      </div>
-                      <div id="Weekly_Avg" class="ImageContainer" style="position: relative; width: 100%; height: 1080px; margin-top: 30px;">
+                      <div id="Game_Recorded" class="ImageContainer" style="position: relative; width: 100%; height: 2560px; margin-top: 30px; margin-bottom: 70px;">
                       </div>
                   </div>
               </div>
               <div class="ImageContainer" style="position: relative; width: 100%; height: auto; margin-top: 30px;">
                   <div class="mainText" style="text-align: left; width: 100%; height: auto">
-                      From the two bar chart we could see that most of the game can not do a good sell for over 1 year, there are 1172 games in the Europe data, and 65.53% of them can only sell for 1 year, only 3.1% of games can stay the top 100 sales list for over 3 years. The USA has offered a similar answer, 66.27% of 1168 games stay less than 1 year, and 3.34% of games run a long term round. As for Japan, the situation has become more extreme，79.73% of 1184 games in the less than 1-year category, and only 2.20% of games can sell more than 3 years.<br>
+                      From the two bar chart we could see that most of the game can not do a good sell for over 1 year, there are <b>1172 games</b> in the Europe data, and <b>65.53% of them</b> can only sell for 1 year, <b>only 3.1%</b> of games can stay the top 100 sales list for over 3 years. And the USA has offered a similar answer, <b>66.27% of 1168 games</b> stay less than 1 year, and <b>3.34%</b> of games run a long term round. As for Japan, the situation has become more extreme，<b>79.73% of 1184 games</b> in the less than 1-year category, and <b>only 2.20%</b> of games can sell more than 3 years.<br>
                       <br>
 
-                      However, even the number of the game can stay on the top-selling list is very limited, but they really do impressive works on marketing. In Europe and USA, a game on the list over 3 years will sell more than 410 copies per week. But for those less than 1 year, they have only around 50 copies per week, there are 8 times of selling here.<br>
+                      However, even the number of the game can stay on the top-selling list is very limited, but they really do impressive works on marketing. In Europe and USA, a game on the list over 3 years will sell <b>more than 410 copies per week.</b> But for those less than 1 year, they have <b>only around 50 copies per week,</b> there are <b>8 times</b> of selling here.<br>
                       <br>
-
-                      While the interesting thing here is that Japan has a different answer. The game sale around 2 - 3 years has the best average sales, it seems that people there prefer the new game.<br>
-                      <br>
-
-
-                      On the other hand, all of the data areas show the pattern that the game in the less than 1-year category and 1 - 2 years has a similar sale. Thus, it seems that we could assume that generally, for most of the games, have only around 2-year life cycle. After that, they are selling will go down, only very limited games can have a long life, and they all do super well.<br>
                       
-                      <br>
-                      In addition, combine the two line chart above, we could figure out that the total number of game copy sales in Japan should less than Europe and USA area. In the record, Japan does not have too many games on the list, but the weekly average sales are much smaller than the other two country areas.
+                      In addition, combine the two line chart above, we could figure out that the total number of <b>game copy sales in Japan should less than Europe and USA area.</b> In the record, Japan does not have too many games on the list, but the weekly average sales are much smaller than the other two country areas.
                   </div>
               </div>                   
           </div>
@@ -207,12 +265,7 @@
                   <div class="mainText" style="text-align: left; width: 100%; margin-top: 20px;">
                       Below is the part to show the data about game enterprise from all over the world. Cause enterprise is a big part for finance and also will have a huge influence to the relevant market, thus I decided to look into the data to see how many products the produced, and how many copies they sold.
                   </div>
-                  <div class="mainText" style="text-align: center; width: 100%; margin-top: 20px;">
-                          Number of Game Released by different Publishers from different contries from 2007 to 2017.<br>
-                          <br>
-                          The number here means the number of games released by that company. Like Electronic Arts 679, means the EU company Electronic Arts has released 679 different games in the past years.
-                  </div>
-                  <div id="Released_Games" class="ImageContainer" style="position: relative; width: 100%; height: 680px; margin-top: 30px;">
+                  <div id="Released_Games_And_Sale" class="ImageContainer" style="position: relative; width: 100%; height: 1860px; margin-top: 30px;">
                   </div>                  
 <!--
                   <div class="col-6" style="display: inline-block; float: left; position: relative; height: auto">
@@ -222,14 +275,7 @@
                       <div id="Publish_Game" class="ImageContainer" style="position: relative; width: 100%; height: 380px; margin-top: 30px;">
                       </div>
                   </div>
--->
-                  <div class="mainText" style="text-align: center; width: 100%; margin-top: 20px;">
-                      Game Copies sales based on different Publishers from 2007 to 2017.<br>
-                      <br>
-                      The number here means the game copies have been sold released by the companies, and the unit here is millions, like Nintendo 625.4, means Japan company Nintendo has totally sold 625.4 million copies of games.
-                  </div>
-                  <div id="Released_Games_Sales" class="ImageContainer" style="position: relative; width: 100%; height: 680px; margin-top: 30px;">
-                  </div>     
+-->  
               </div>
 <!--
               <div style="width: 100%; height: auto;">
@@ -251,25 +297,13 @@
 -->
               <div class="ImageContainer" style="position: relative; width: 100%; height: auto; margin-top: 30px;">
                   <div class="mainText" style="text-align: left; width: 100%; height: auto">
-                      Based on the two combination maps above, I notice that during the past years from 2007 to 2017, the enterprise in different areas has done similar sales.<br>
-                      
-                      <br>
-                      However, the data in the sales map part and the data in the weekly sales analysis part both show that the game market is different in different countries.<br>
+                      Based on the two combination maps above, <b>the enterprise in different areas has done similar sales.</b><br> However, the data in the sales map part and the data in the weekly sales analysis part both show that <b>the game market is different in different countries.</b> Especially the game market in Japan, it is a dying market.<br>
                       <br>
                       
-                      Especially the market in Japan, it is a dying market. But, the Japan Enterprise give a different answer.<br>
+                      At first, the number of <b>Japan Game Enterprise</b> is similar to the <b>Game Enterprise based in USA</b>, <b>both has around 195 companies</b>, and <b>about 30 more comapnies than the Europe Area.</b> Besides, Japanese companies also have sold as much as USA companies did in the past years and more than the sum of Europe's. And the Japanese company, <b>Nintendo has sold the most game copies, 625.4 million of copies</b>, as about the top in Europe, Electronic Arts have done 602.6, while the top in the USA, Activision has only done 504.7 million copies sales. <br>
                       <br>
                       
-                      At first, the number of Japanese Game Enterprise is similar to the Game Enterprise based in USA, both has around 195 companies, and about 30 more comapnies than the Europe Area.<br>
-                      <br>
-                      
-                      Besides, Japanese companies also have sold as much as USA companies did in the past years and more than the sum of Europe's.<br>
-                      <br>
-                      
-                      And the Japanese company, Nintendo has sold the most game copies, 625.4 million of copies, as about the top in Europe, Electronic Arts have done 602.6, while the top in the USA, Activision has only done 504.7 million copies sales. <br>
-                      <br>
-                      
-                      Thus I got the conclusion that in fact, the Japanese Companies did a good job according to the past time, and they should have a global strategy. Cause their target users of their products are from all over the world, and they are competing in the same global game market, this can explain why those Japanese Companies still do the similar sale as the western companies did, while their own game marketing is decreasing.<br>
+                      Thus I got the conclusion that in fact, <b>game companies are using some global strategy to save their sales.</b> Cause their target users of their products are from all over the world, and they are competing in the same global game market, not only the local area. This will explain why those Japanese Companies still do the similar sale as the western companies did, while their own game marketing is decreasing.<br>
                       <br>
                   </div> 
               </div>                 
@@ -279,22 +313,57 @@
               <div class='ColorKey'>
                   <div class="Subtitle">Summary</div>
                   <div class="mainText" style="text-align: left; width: 100%; height: auto">
-                      Generally Speaking, based on the GDP change data, game marketing data, game sales data, and the game publisher sales data, we could see that for the different area, the game market and games sales has a lot of different.<br>
+                      Generally Speaking, based on the GDP change data, game marketing data, game sales data, and the game publisher sales data, we could see that <b>for the different area, the game market and games sales has a lot of different.</b> Japan has become the smallest market all over the world, and the USA and Europe have the similar size of the game market.<br>
                       <br>
                       
-                      Japan has become the smallest market all over the world, and the USA and Europe have the similar size of the game market.<br>
+                      But, <b>the game companies target the market as a whole global market, and this reduces the difference between game publishers.</b> This can also somehow explain that the game market does not influence by the GDP too much, cause the publisher in this market is more influenced by the global preference, but not the preference or consumption habits from one country area.<br>
                       <br>
                       
-                      But, the game companies target the market as a whole global market, and this reduces the difference between game publishers.<br>
-                      <br>
-                      
-                      This can also somehow explain that the game market does not influence by the GDP too much, cause the publisher in this market is more influenced by the global preference, but not the preference or consumption habits from one country area.<br>
-                      <br>
-                      
-                      What's more, this also leaves the inspiration, that if a publisher would like to join this market, it is wise to use a global strategy to develop their companies. And if they have sufficient resource, it is better to design a game for long term market round, this benefit much more than those games has only a short life.
+                      From this, it leaves the inspiration that if a publisher would like to join this market, it is wise to use a global strategy to develop their companies. And if they have sufficient resource, it is better to design a game for long term market round, this benefit much more than those games has only a short life.
                   </div>
               </div>             
           </div>
+
+          <div id="tool" class="container">
+              <div style="width: 100%; height: auto; display: inline-block;">
+                  <div class="ColorKey">
+                      <div class="Subtitle">Tools</div>
+                  </div>
+                  
+                  <div id="Tools_1" class="ImageContainer col-2" style="width: 100%; height: 200px; float: left; text-align: center">
+                  </div>
+                  <div id="Tools_2" class="ImageContainer col-2" style="width: 100%; height: 200px; float: left;">
+                  </div>
+                  <div id="Tools_3" class="ImageContainer col-2" style="width: 100%; height: 200px; float: left;">
+                  </div>
+                  <div id="Tools_4" class="ImageContainer col-2" style="width: 100%; height: 200px; float: left;">
+                  </div>
+                  <div id="Tools_5" class="ImageContainer col-2" style="width: 100%; height: 200px; float: left;">
+                  </div>
+                  <div id="Tools_6" class="ImageContainer col-2" style="width: 100%; height: 200px; float: left;">
+                  </div>                   
+              </div>
+              <div style="width: 100%; height: auto; display: inline-block;">
+                  <div class="mainText col-2" style="width: 100%; height: auto; float: left; text-align: center">
+                      <a style="color: rgb(175,175,175)" href="https://nodejs.org/en/">Node.js</a>
+                  </div>
+                  <div class="mainText col-2" style="width: 100%; height: auto; float: left; text-align: center">
+                      <a style="color: rgb(175,175,175)" href="https://www.python.org/">Python</a>
+                  </div>
+                  <div class="mainText col-2" style="width: 100%; height: auto; float: left; text-align: center">
+                      <a style="color: rgb(175,175,175)" href="https://public.tableau.com/en-us/s/">Tableau Public</a>
+                  </div>
+                  <div class="mainText col-2" style="width: 100%; height: auto; float: left; text-align: center">
+                      <a style="color: rgb(175,175,175)" href="https://d3js.org/">D3.js</a>
+                  </div>
+                  <div class="mainText col-2" style="width: 100%; height: auto; float: left; text-align: center">
+                      <a style="color: rgb(175,175,175)" href="https://getbootstrap.com/">Bootstrap</a>
+                  </div>
+                  <div class="mainText col-2" style="width: 100%; height: auto; float: left; text-align: center">
+                      <a style="color: rgb(175,175,175)" href="https://azure.microsoft.com/en-us/">Microsoft Azure</a>
+                  </div>                    
+              </div>                  
+          </div>     
           
           <div class="container" id="footer">           
           </div>
