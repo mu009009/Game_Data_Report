@@ -321,7 +321,7 @@ function bubblesClick(e){
             addressAreaFile = "";
     }
     
-    var targetAddress = "../data/"+addressAreaFolder+"/Game_Sales_Data_"+Year+addressAreaFile+".csv";
+    var targetAddress = "https://mu009009.github.io/Game_Data_Report/data/"+addressAreaFolder+"/Game_Sales_Data_"+Year+addressAreaFile+".csv";
     console.log(targetAddress);
     d3.csv(targetAddress, function(data){
         var GameYearlyData = data;
